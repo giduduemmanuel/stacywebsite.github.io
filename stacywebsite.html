@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Online Tutor - English & Literature Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #ff7e5f;
+            --accent-color: #166088;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('stacy-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #e06b4c;
+            border-color: #e06b4c;
+        }
+        
+        .feature-box {
+            padding: 30px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        
+        .course-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .premium-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+        
+        .teacher-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .resource-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .teacher-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Stacy Online Tutor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon">Click</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page-specific content would go here -->
+    <!-- Below is just a sample for the homepage -->
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="display-4 fw-bold mb-4">
+                <img class="display-4 fw-bold mb-4" src="photo.jpg" width="270" height="350">
+            </div>
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Master English & Literature with Stacy</h1>
+            <p class="lead mb-5">Interactive online courses designed to improve your language skills and literary analysis</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="courses.html" class="btn btn-primary btn-lg px-4">Browse Courses</a>
+                <a href="resources.html" class="btn btn-outline-light btn-lg px-4">Free Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5" id="home">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Why Learn With Stacy?</h2>
+                <p class="lead text-muted">Quality education tailored to your needs</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-video fa-3x mb-3 text-primary"></i>
+                        <h4>Video Lessons</h4>
+                        <p>Engaging video tutorials covering all aspects of English language and literature.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-book-open fa-3x mb-3 text-primary"></i>
+                        <h4>Comprehensive PDFs</h4>
+                        <p>Downloadable study materials and notes to complement your learning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-headset fa-3x mb-3 text-primary"></i>
+                        <h4>Live Support</h4>
+                        <p>Regular Q&A sessions and personalized feedback on your progress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section class="py-5 bg-light" id="courses">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Popular Courses</h2>
+                <p class="lead text-muted">Start learning today</p>
+            </div>
+            <div class="row">
+                <!-- Sample Course 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100">
+                        <img src="course1.jpg" class="card-img-top" alt="English Grammar Masterclass">
+                        <div class="card-body">
+                            <span class="premium-badge">Premium</span>
+                            <h5 class="card-title">English Grammar Masterclass</h5>
+                            <p class="card-text">Master all essential grammar rules with interactive exercises and quizzes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$49.99</span>
+                                <a href="#" class="btn btn-sm btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sample Course 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100">
+                        <img src="course2.jpg" class="card-img-top" alt="Shakespeare Studies">
+                        <div class="card-body">
+                            <span class="premium-badge">Premium</span>
+                            <h5 class="card-title">Shakespeare Studies</h5>
+                            <p class="card-text">In-depth analysis of Shakespeare's major works and literary techniques.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$59.99</span>
+                                <a href="#" class="btn btn-sm btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sample Course 3 (Free) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100">
+                        <img src="course3.jpg" class="card-img-top" alt="Introduction to Poetry">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Poetry</h5>
+                            <p class="card-text">Free introductory course covering basic poetic forms and analysis techniques.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success fw-bold">FREE</span>
+                                <a href="#" class="btn btn-sm btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="courses.html" class="btn btn-outline-primary">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5" id="courses">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>What Students Say</h2>
+                <p class="lead text-muted">Success stories from our learners</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Stacy's grammar course transformed my writing skills. I now write with confidence for my university assignments."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="student1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Student">
+                                <div>
+                                    <h6 class="mb-0">Sarah K.</h6>
+                                    <small class="text-muted">University Student</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"The literature analysis techniques I learned helped me score top marks in my final exams. Highly recommended!"</p>
+                            <div class="d-flex align-items-center">
+                                <img src="student2.jpg" class="rounded-circle me-3" width="50" height="50" alt="Student">
+                                <div>
+                                    <h6 class="mb-0">David M.</h6>
+                                    <small class="text-muted">High School Student</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text">"As a non-native speaker, Stacy's pronunciation guides and practical exercises have dramatically improved my English."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="student3.jpg" class="rounded-circle me-3" width="50" height="50" alt="Student">
+                                <div>
+                                    <h6 class="mb-0">Amina J.</h6>
+                                    <small class="text-muted">ESL Learner</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Improve Your English Skills?</h2>
+            <p class="lead mb-5">Join hundreds of students who have transformed their language abilities with Stacy's courses</p>
+            <a href="courses.html" class="btn btn-light btn-lg px-4 me-3">Browse Courses</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Contact Stacy</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <section class="py-5 bg-primary text-white" id="contact">
+        <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-4">Stacy Online Tutor</h5>
+                    <p>Quality online English and Literature courses for students of all levels. Improve your language skills with expert guidance.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f">Facebook</i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter">X</i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram">Instagram</i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in">Linkedin</i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube">YouTube</i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-white-50">Courses</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50">Resources</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Contact Info</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2 text-white"></i> +256 778 281064</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2 text-white"></i> +256 751 772616</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 text-white"></i> akaostella10@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-white-50">Subscribe to get updates on new courses and resources.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-secondary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2023 Stacy Online Tutor. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3">Terms of Service</a>
+                    <a href="#" class="text-white-50">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
